@@ -1,0 +1,124 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color:white;
+    background:#021f78c0 url(fundo.png);
+    background-size:50% 100%;
+     
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(218, 255, 241);
+    font-size: 45px;
+    height:70px;
+}
+h2{
+     font-size: 39px;
+     color:white;
+}
+p1{
+    font-size:30px;
+}
+main{
+padding-top: 70px;
+padding-bottom: 70px;
+}
+#j{
+    padding-left: 22px;
+    color:rgb(2, 6, 79);
+    box-shadow: 5px 8px 10px rgb(0, 0, 0);  
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: azure;
+}
+#fim{
+    padding-right: 22px;
+}
+#s{
+    padding-left: 15px;
+    color:rgb(2, 6, 79);
+    box-shadow: 5px 8px 10px rgb(0, 0, 0);  
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: azure;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+footer a{
+   text-decoration: none;
+   font-style: unset;
+   color: white;
+   cursor:alias;
+}
+container{
+cursor:default;
+
+}
+container:hover{
+    color:rgb(2, 6, 79);
+    box-shadow: 5px 8px 10px rgb(0, 0, 0);  
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: azure;
+    
+}
+header img{
+    width: 188px;
+    height: 225px;
+    border-radius: 20%;
+    border: 1px solid  rgb(42, 75, 197);
+    cursor: no-drop;
+    box-shadow: 5px 8px 10px rgb(0, 0, 0);
+
+}
+button{
+    cursor: pointer;
+}
+main button{
+    color: rgb(218, 255, 241);
+    font-size:20px;
+    font-weight: bold;
+    padding: 1rem;
+    background:linear-gradient(90deg,#3c75baaf 10%, #0f2f91 100%);
+    border-radius: 1rem;  
+    border: none;
+    margin:1rem;
+    text-transform: uppercase;
+    transition: all 300ms ease-out;
+    width: 15rem;
+    height: 4.7rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
+}
+main button:hover {
+    font-size: 25px;
+    width: 17rem;
+    height: 5.5rem;
+    background: linear-gradient( #2264e8 0%, #0a1948 100%);;
+    border: none;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+}
+.center{
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding-top:60px;
+    padding-bottom:25px;
+    margin: 0;
+    
+}
+li{
+    display: inline-block;
+    margin-inline-start:  8%;
+    margin-inline-end: 8%;
+    font-size: 16px;
+    text-align: left;
+}
+footer{ 
+    padding-top: 0%;
+    padding-bottom: 40px;
+    background-color: #0a1948;
+    color: white;
+}
