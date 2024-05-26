@@ -2,45 +2,36 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     color:white;
-    background:#021f78c0 url(fundo.png);
-    background-size:50% 100%;
-     
+    background:#000d24d8 url(fundo.png);
+    background-size:50% 100%;   
+    max-width: 100%;
 }
 h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(218, 255, 241);
-    font-size: 45px;
-    height:70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #6a915d;
+    font-size: 300%;
+    font-weight: bold; 
+    margin: 0;
+    padding: 2%;
+    text-shadow: rgb(0, 0, 0) 0 0 10px;
 }
-h2{
-     font-size: 39px;
-     color:white;
+h3{
+    color: #3a5ec8;
 }
 p1{
-    font-size:30px;
+    font-size: 1rem;
+    color: #8d7e7e;
 }
 main{
-padding-top: 70px;
-padding-bottom: 70px;
+padding: 1rem;
 }
 #j{
     padding-left: 22px;
-    color:rgb(2, 6, 79);
-    box-shadow: 5px 8px 10px rgb(0, 0, 0);  
-    border-radius: 1rem;
-    font-weight: bold;
-    background-color: azure;
+    border-left:3px solid black;
 }
 #fim{
     padding-right: 22px;
-}
-#s{
-    padding-left: 15px;
-    color:rgb(2, 6, 79);
-    box-shadow: 5px 8px 10px rgb(0, 0, 0);  
-    border-radius: 1rem;
-    font-weight: bold;
-    background-color: azure;
+    border-right:3px solid black;
 }
 .icon{
     width: 25px;
@@ -54,34 +45,28 @@ footer a{
 }
 container{
 cursor:default;
-
+border-top: 3px solid black;
 }
 container:hover{
-    color:rgb(2, 6, 79);
-    box-shadow: 5px 8px 10px rgb(0, 0, 0);  
-    border-radius: 1rem;
-    font-weight: bold;
-    background-color: azure;
-    
+    text-shadow: white 0 0 5px, rgb(2, 132, 34) 0 0 18px, rgb(3, 115, 3) 0 0 40px;
+    color: black;
 }
 header img{
     width: 188px;
     height: 225px;
     border-radius: 20%;
-    border: 1px solid  rgb(42, 75, 197);
     cursor: no-drop;
-    box-shadow: 5px 8px 10px rgb(0, 0, 0);
-
+    box-shadow:black 0 0 10px, rgb(0, 88, 28) 0 0 15px;
 }
 button{
     cursor: pointer;
 }
 main button{
-    color: rgb(218, 255, 241);
-    font-size:20px;
-    font-weight: bold;
-    padding: 1rem;
-    background:linear-gradient(90deg,#3c75baaf 10%, #0f2f91 100%);
+    color: #6a915d;
+    text-shadow: rgb(3, 2, 2) 0 0 7px;
+    font-size:1.5rem;
+    font-weight:bold;
+    background:linear-gradient(90deg,#292a2b 10%, #202128 100%);
     border-radius: 1rem;  
     border: none;
     margin:1rem;
@@ -92,33 +77,51 @@ main button{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
 }
 main button:hover {
-    font-size: 25px;
+    color: rgb(255, 247, 247);
+    font-size: 1.7rem;
     width: 17rem;
     height: 5.5rem;
-    background: linear-gradient( #2264e8 0%, #0a1948 100%);;
+    background: linear-gradient(90deg, #1f1f1f 20%, #010203 50%);
     border: none;
-    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+    box-shadow:green 0 0 10px, black 7px 7px 15px;
+    text-shadow: white  0 0 10px, rgb(3, 149, 3) 0 0 20px,  rgb(17, 142, 15)0 0 25px;
+}
+.topic {
+    font-size: 140%;
+    text-align:center;
+    background-color:black;
+    border-radius: 1rem;
+    box-shadow: white  0 0 7px, rgb(1, 140, 1) 0 0 20px,  rgb(2, 72, 1)0 0 30px;
+    width: 33%;
+    height: 2%;
+    position:relative; left: 33%;
+    max-width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0.2rem;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.topic.show {
+    max-height: 1000px;
+    padding: 0.5rem;
 }
 .center{
     text-align: center;
 }
 ul{
     list-style: none;
-    padding-top:60px;
-    padding-bottom:25px;
-    margin: 0;
-    
+    padding-left: 0%;
+    margin: 0%;
 }
 li{
-    display: inline-block;
-    margin-inline-start:  8%;
-    margin-inline-end: 8%;
-    font-size: 16px;
-    text-align: left;
+    display:inline-block;
+    font-size: 0.8rem;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 footer{ 
-    padding-top: 0%;
-    padding-bottom: 40px;
-    background-color: #0a1948;
+    background-color: #1d3329;
     color: white;
+    box-shadow: white 0px 0px 7px, green 0px 0px 12px, greenyellow 0 0 16px;
+    padding: 2%;
 }

@@ -5,130 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" rel="shortcut icon" href="icons/eng.ico"> 
     <title>Portfólio | JAN</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
-    <style>
-    body{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-        color:white;
-        background:#000d24d8 url(fundo.png);
-        background-size:50% 100%;   
-    }
-    h1{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #6a915d;
-        font-size: 300%;
-        font-weight: bold; 
-        margin: 0;
-        padding: 2%;
-        text-shadow: rgb(0, 0, 0) 0 0 10px;
-    }
-    h3{
-        color: #3a5ec8;
-    }
-    p1{
-        font-size: 1rem;
-        color: #8d7e7e;
-    }
-    main{
-    padding: 1rem;
-    }
-    #j{
-        padding-left: 22px;
-        border-left:3px solid black;
-    }
-    #fim{
-        padding-right: 22px;
-        border-right:3px solid black;
-    }
-    .icon{
-        width: 25px;
-        height: 25px;
-    }
-    footer a{
-       text-decoration: none;
-       font-style: unset;
-       color: white;
-       cursor:alias;
-    }
-    container{
-    cursor:default;
-    border-top: 3px solid black;
-    }
-    container:hover{
-        text-shadow: white 0 0 5px, rgb(2, 132, 34) 0 0 18px, rgb(3, 115, 3) 0 0 40px;
-        color: black;
-    }
-    header img{
-        width: 188px;
-        height: 225px;
-        border-radius: 20%;
-        cursor: no-drop;
-        box-shadow:black 0 0 10px, rgb(0, 88, 28) 0 0 15px;
-    }
-    button{
-        cursor: pointer;
-    }
-    main button{
-        color: #6a915d;
-        text-shadow: rgb(3, 2, 2) 0 0 7px;
-        font-size:1.5rem;
-        font-weight:bold;
-        background:linear-gradient(90deg,#292a2b 10%, #202128 100%);
-        border-radius: 1rem;  
-        border: none;
-        margin:1rem;
-        text-transform: uppercase;
-        transition: all 300ms ease-out;
-        width: 15rem;
-        height: 4.7rem;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
-    }
-    main button:hover {
-        color: rgb(255, 247, 247);
-        font-size: 1.7rem;
-        width: 17rem;
-        height: 5.5rem;
-        background: linear-gradient(90deg, #1f1f1f 20%, #010203 50%);
-        border: none;
-        box-shadow:green 0 0 10px, black 7px 7px 15px;
-        text-shadow: white  0 0 10px, rgb(1, 140, 1) 0 0 20px,  rgb(17, 142, 15)0 0 25px;
-    }
-    .slide {
-        font-size: 140%;
-        text-align:justify;
-        background-color: black;
-        border-radius: 1rem;
-        box-shadow: white  0 0 7px, rgb(1, 140, 1) 0 0 20px,  rgb(2, 72, 1)0 0 30px;
-        position:relative;
-        padding: 0.5rem;
-        margin: 1rem 27rem 1rem 27rem;
-    }
-    .center{
-        text-align: center;
-    }
-    ul{
-        list-style: none;
-        padding-top:60px;
-        padding-bottom:25px;
-        margin: 0;
-        
-    }
-    li{
-        display: inline-block;
-        margin-inline-start:  8%;
-        margin-inline-end: 8%;
-        font-size: 16px;
-        text-align: left;
-    }
-    footer{ 
-        padding-top: 0%;
-        background-color: #1d3329;
-        color: white;
-        box-shadow: white 0px 0px 7px, green 0px 0px 12px, greenyellow 0 0 16px;
-    }
-    </style>
+    <link rel= "stylesheet" href="visual.css">
+    <script src="script.js"></script>
 </head>
 <body> 
     <header class="center">
@@ -141,26 +19,19 @@
     </header>
     <main id="menu" class="center">  
             <div>
-                 <a class="collapsed" data-bs-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><button>About Me</button></a>
-                   </br>
-                <div id="collapseOne" class="collapse" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="slide">
-                    Graduating in software engineering from ESTÁCIO University. I currently work with people management, processes and financial control in retail. I'm looking for a career change, I'm a great technology enthusiast and fascinated by softwares and game development.                    
-                   </div>
-                </div> 
-                 <a class="collapsed" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><button>Academic Education</button></a>
-                   </br>
-                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="slide"><h3>Estácio</h3>
+              <button class="item" onclick="toggleContent('topic1')">About Me</button>
+                    <div id="topic1" class="topic" >
+                        Graduating in software engineering from ESTÁCIO University. I currently work with people management, processes and financial control in retail. I'm looking for a career change, I'm a great technology enthusiast and fascinated by softwares and game development.                    
+                    </div>
+             <button class="item" onclick="toggleContent('topic2')">Academic Education</button>
+                    <div id="topic2" class="topic">
+                            <h3>Estácio</h3>
                             |Bachelor's degree, Software Engineering · (April 2023 – April 2027)
                             <h3>Federal Institute of Education, Science and Technology of Ceará</h3>
                             |Technology in Building Construction· (2016 June – 2019 November)
-                        </div>  
-                    </div>
-                 <a class="collapsed" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <button>Experince</button></a>
-                   </br>
-                    <div id="collapseThree" class="collapse" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="slide">
+                    </div>  
+            <button class="item" onclick="toggleContent('topic3')">Experince</button>
+                    <div id="topic3" class="topic">
                             <h3>RD Saúde</h3> 
                             |Supervisor<br>
                             October 2019 - Present<br>
@@ -169,20 +40,14 @@
                             |Operations Intern<br>
                             November 2018 – February 2019 (4 months )<br>
                             <p1>Juazeiro do Norte, Ceará, Brasil</p1>
-                        </div>
-                    </div> 
-                 <a class="collapsed" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><button>Additional activities</button></a>
-                   </br>
-                    <div id="collapseFour" class="collapse" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingFour">
-                        <div class="slide">
+                    </div>
+            <button class="item" onclick="toggleContent('topic4')">Additional activities</button>
+                    <div id="topic4"  class="topic">
                             <h3>Bootcamp Santander | 2024</h3>
                              -Fundamentos de IA para Devs - (42 horas)
-                        </div>
-                    </div> 
-                 <a class="collapsed" data-bs-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> <button>Main Competencies</button></a>
-                  </br>
-                  <div id="collapseFive" class="collapse" data-bs-parent="#accordion" role="tabpanel" aria-labelledby="headingFive">
-                    <div class="slide">
+                    </div>
+            <button class="item" onclick="toggleContent('topic5')">Main Competencies</button>
+                    <div id="topic5"  class="topic">
                         Familiarity with: 
                         <h3> Python;
                         JavaScript; HTML;
@@ -193,22 +58,23 @@
                         project management;
                         </h3>
                     </div>
-                  </div> 
             </div> 
    </main> 
 </body>
 
+
 <footer>
     <nav>
         <ul>
-            <li>
+            <li class="col-2">
                 <a href="https://www.instagram.com/jan_sousa1/"><img class="icon" src="insta.png"> INSTAGRAM</br>---------------------</a>
             </li> 
-            <li>
+            <li class="col-2">
                 <a href="https://www.linkedin.com/in/janadiel-sousa-9a1416158/"><img class="icon" src="linkedin.png"> LINKEDIN</br>-------------------</a>
             </li> 
-            <li><img class="icon" src="gmail.png"> E-MAIL:</br>janadiel03@gmail.com</li> 
-            <li><img class="icon" src="local.ico"> LOCAL:</br>Limoeiro do Norte - CE</li>
+            <li class="col-2"><img class="icon" src="gmail.png"> E-MAIL:</br>janadiel03@gmail.com</li> 
+            <li class="col-2"><img class="icon" src="local.ico"> LOCAL:</br>Limoeiro do Norte - CE
+            </li>
         </ul>
     </nav>
 </footer>
