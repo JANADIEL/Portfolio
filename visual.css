@@ -144,7 +144,7 @@ footer{
 
 @media screen and (min-width: 769px) {
     .item {
-        display: inline-block; /* Exibe os itens do menu em linha */
+        display: inline-block;
     }
     .break{
         display: block;
